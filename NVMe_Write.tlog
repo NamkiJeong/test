@@ -1,0 +1,73 @@
+TC--,[LOG_TS=2022-05-28 09:00:59.505613080][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 24300 -c 5 -z 594 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.549323788][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 24300 -c 5 -z 594 -d writebuf Success_Cmd End_Rounding data size to fit block count (3072 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.597485012][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 19984 -c 2 -z 318 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.635014226][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 19984 -c 2 -z 318 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.672083184][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 27307 -c 6 -z 580 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.692724108][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 27307 -c 6 -z 580 -d writebuf Success_Cmd End_Rounding data size to fit block count (3584 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.710710317][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 8694 -c 5 -z 778 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.732720906][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 8694 -c 5 -z 778 -d writebuf Success_Cmd End_Rounding data size to fit block count (3072 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.756134758][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 30523 -c 3 -z 64 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.769564325][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 30523 -c 3 -z 64 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.796184451][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 23332 -c 0 -z 918 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.809786517][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 23332 -c 0 -z 918 -d writebuf Success_Cmd End_write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.827501607][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 25204 -c 5 -z 370 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.842194087][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 25204 -c 5 -z 370 -d writebuf Success_Cmd End_Rounding data size to fit block count (3072 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.866025163][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 19442 -c 2 -z 699 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.878988422][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 19442 -c 2 -z 699 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.905926627][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 30565 -c 2 -z 136 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.919185998][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 30565 -c 2 -z 136 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.937662051][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12459 -c 3 -z 740 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.951143653][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12459 -c 3 -z 740 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:00:59.973703362][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 1246 -c 5 -z 573 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:00:59.987366590][RUNTIME=0][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 1246 -c 5 -z 573 -d writebuf Success_Cmd End_Rounding data size to fit block count (3072 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.036944419][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 2445 -c 1 -z 192 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.072661291][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 2445 -c 1 -z 192 -d writebuf Success_Cmd End_Rounding data size to fit block count (1024 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.124057815][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 22148 -c 3 -z 115 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.159675650][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 22148 -c 3 -z 115 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.209739272][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 3720 -c 4 -z 380 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.235800823][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 3720 -c 4 -z 380 -d writebuf Success_Cmd End_Rounding data size to fit block count (2560 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.270476464][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 23791 -c 2 -z 432 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.295380765][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 23791 -c 2 -z 432 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.329797034][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 17753 -c 2 -z 522 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.354702877][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 17753 -c 2 -z 522 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.389907146][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 16927 -c 3 -z 460 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.415139587][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 16927 -c 3 -z 460 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.449454867][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 29058 -c 6 -z 856 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.481837241][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 29058 -c 6 -z 856 -d writebuf Success_Cmd End_Rounding data size to fit block count (3584 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.517084482][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 8212 -c 6 -z 80 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.542110092][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 8212 -c 6 -z 80 -d writebuf Success_Cmd End_Rounding data size to fit block count (3584 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.583248639][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12805 -c 0 -z 851 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.609414311][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12805 -c 0 -z 851 -d writebuf Success_Cmd End_write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.643451820][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 438 -c 2 -z 960 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.668461637][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 438 -c 2 -z 960 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.704830984][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 15985 -c 2 -z 427 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.749132134][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 15985 -c 2 -z 427 -d writebuf Success_Cmd End_Rounding data size to fit block count (1536 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.798097420][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 431 -c 3 -z 57 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.834526732][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 431 -c 3 -z 57 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.883564650][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12412 -c 3 -z 65 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:00.919298342][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 12412 -c 3 -z 65 -d writebuf Success_Cmd End_Rounding data size to fit block count (2048 bytes)
+write: Success]
+TC--,[LOG_TS=2022-05-28 09:01:00.972896666][RUNTIME=1][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 28940 -c 1 -z 621 -d writebuf 0 Start]
+TC--,[LOG_TS=2022-05-28 09:01:01.008766065][RUNTIME=2][LOG_TYPE=TC_COMMAND][nvme0n1 : nvme write /dev/nvme0n1 -s 28940 -c 1 -z 621 -d writebuf Success_Cmd End_Rounding data size to fit block count (1024 bytes)
+write: Success]
