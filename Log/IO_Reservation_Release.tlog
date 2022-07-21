@@ -1,0 +1,12 @@
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:19:20.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 164741 -p 145753 -i 0 -a 0 -t 5 0 Start]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:19:20.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 164741 -p 145753 -i 0 -a 0 -t 5 Fail End_NVMe status: Invalid Command Opcode: A reserved coded value or an unsupported value in the command opcode field(0x1)
+jnk1 nvme resv-acquire <device> [OPTIONS]]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:32:06.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 38658 -p 32822 -i  -a  -t 6 0 Start]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:32:06.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 38658 -p 32822 -i  -a  -t 6 Fail End_Expected byte argument for 'racqa' but got '-t'!
+jnk1 nvme resv-acquire <device> [OPTIONS]]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:36:02.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 140679 -p 67382 -i  -a  -t 4 0 Start]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:36:02.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-acquire /dev/nvme0n1 -n 0 -c 140679 -p 67382 -i  -a  -t 4 Fail End_Expected byte argument for 'racqa' but got '-t'!
+jnk1 nvme resv-acquire <device> [OPTIONS]]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-release /dev/nvme0n1 -n 1 -i 0 -a 1 0 Start]
+TC:IO_Reservation_Release,[LOG_TS:2022-07-13 12:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-release /dev/nvme0n1 -n 1 -i 0 -a 1 Fail End_NVMe status: Invalid Command Opcode: A reserved coded value or an unsupported value in the command opcode field(0x1)
+jnk1 nvme resv-release <device> [OPTIONS]]

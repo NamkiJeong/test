@@ -388,3 +388,549 @@ Thermal Management T1 Trans Count	: 0
 Thermal Management T2 Trans Count	: 0
 Thermal Management T1 Total Time	: 0
 Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:19:07.373002217][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:19:07.407666118][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 61 C (334 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 1%
+endurance group critical warning summary: 0
+data_units_read				: 14,601,039
+data_units_written			: 18,273,452
+host_read_commands			: 887,705,418
+host_write_commands			: 500,509,472
+controller_busy_time			: 496
+power_cycles				: 55
+power_on_hours				: 12
+unsafe_shutdowns			: 31
+media_errors				: 84
+num_err_log_entries			: 199
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 61 C (334 Kelvin)
+Temperature Sensor 2           : 75 C (348 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:28:55.483187042][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:28:55.507050494][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 64 C (337 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 1%
+endurance group critical warning summary: 0
+data_units_read				: 14,696,291
+data_units_written			: 18,365,793
+host_read_commands			: 899,610,910
+host_write_commands			: 502,303,837
+controller_busy_time			: 500
+power_cycles				: 55
+power_on_hours				: 12
+unsafe_shutdowns			: 31
+media_errors				: 98
+num_err_log_entries			: 213
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 64 C (337 Kelvin)
+Temperature Sensor 2           : 79 C (352 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:38:54.499224960][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 11:38:54.523340051][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 64 C (337 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 1%
+endurance group critical warning summary: 0
+data_units_read				: 14,810,365
+data_units_written			: 18,467,523
+host_read_commands			: 913,868,988
+host_write_commands			: 504,128,168
+controller_busy_time			: 504
+power_cycles				: 55
+power_on_hours				: 12
+unsafe_shutdowns			: 31
+media_errors				: 112
+num_err_log_entries			: 227
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 64 C (337 Kelvin)
+Temperature Sensor 2           : 79 C (352 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 15:40:05.506968120][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 15:40:05.520305056][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 2%
+endurance group critical warning summary: 0
+data_units_read				: 14,903,337
+data_units_written			: 22,491,598
+host_read_commands			: 925,487,906
+host_write_commands			: 772,416,946
+controller_busy_time			: 741
+power_cycles				: 55
+power_on_hours				: 16
+unsafe_shutdowns			: 31
+media_errors				: 127
+num_err_log_entries			: 242
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 82 C (355 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 19:42:04.495437699][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 19:42:04.502972977][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 69 C (342 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 3%
+endurance group critical warning summary: 0
+data_units_read				: 15,004,892
+data_units_written			: 26,471,123
+host_read_commands			: 938,179,836
+host_write_commands			: 1,035,201,475
+controller_busy_time			: 983
+power_cycles				: 55
+power_on_hours				: 20
+unsafe_shutdowns			: 31
+media_errors				: 141
+num_err_log_entries			: 256
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 69 C (342 Kelvin)
+Temperature Sensor 2           : 83 C (356 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-14 23:41:42.294419209][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-14 23:41:42.318301809][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 4%
+endurance group critical warning summary: 0
+data_units_read				: 15,112,118
+data_units_written			: 30,454,537
+host_read_commands			: 951,580,979
+host_write_commands			: 1,298,373,946
+controller_busy_time			: 1,222
+power_cycles				: 55
+power_on_hours				: 24
+unsafe_shutdowns			: 31
+media_errors				: 149
+num_err_log_entries			: 264
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 82 C (355 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-15 03:43:26.398904063][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-15 03:43:26.422627866][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 69 C (342 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 5%
+endurance group critical warning summary: 0
+data_units_read				: 15,219,390
+data_units_written			: 34,436,883
+host_read_commands			: 964,987,536
+host_write_commands			: 1,561,525,907
+controller_busy_time			: 1,463
+power_cycles				: 55
+power_on_hours				: 28
+unsafe_shutdowns			: 31
+media_errors				: 157
+num_err_log_entries			: 272
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 69 C (342 Kelvin)
+Temperature Sensor 2           : 83 C (356 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-15 07:44:17.318061237][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-15 07:44:17.334819651][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 69 C (342 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 6%
+endurance group critical warning summary: 0
+data_units_read				: 15,317,804
+data_units_written			: 38,422,575
+host_read_commands			: 977,286,674
+host_write_commands			: 1,824,959,002
+controller_busy_time			: 1,703
+power_cycles				: 55
+power_on_hours				: 32
+unsafe_shutdowns			: 31
+media_errors				: 165
+num_err_log_entries			: 280
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 69 C (342 Kelvin)
+Temperature Sensor 2           : 84 C (357 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-15 11:46:20.535482316][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-15 11:46:20.559360976][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 7%
+endurance group critical warning summary: 0
+data_units_read				: 15,416,885
+data_units_written			: 42,406,097
+host_read_commands			: 989,669,504
+host_write_commands			: 2,088,126,426
+controller_busy_time			: 1,945
+power_cycles				: 55
+power_on_hours				: 36
+unsafe_shutdowns			: 31
+media_errors				: 179
+num_err_log_entries			: 294
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 82 C (355 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-15 16:54:29.416774720][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-15 16:54:29.441030157][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 8%
+endurance group critical warning summary: 0
+data_units_read				: 15,604,854
+data_units_written			: 47,229,645
+host_read_commands			: 1,013,161,310
+host_write_commands			: 2,409,215,245
+controller_busy_time			: 2,231
+power_cycles				: 55
+power_on_hours				: 41
+unsafe_shutdowns			: 31
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 83 C (356 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-15 21:06:48.514396312][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-15 21:06:48.530256700][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 9%
+endurance group critical warning summary: 0
+data_units_read				: 15,729,295
+data_units_written			: 51,211,105
+host_read_commands			: 1,028,713,277
+host_write_commands			: 2,672,144,654
+controller_busy_time			: 2,475
+power_cycles				: 55
+power_on_hours				: 46
+unsafe_shutdowns			: 31
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 83 C (356 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-16 01:10:51.531707010][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-16 01:10:51.555541417][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 10%
+endurance group critical warning summary: 0
+data_units_read				: 15,855,461
+data_units_written			: 55,193,574
+host_read_commands			: 1,044,481,146
+host_write_commands			: 2,935,251,911
+controller_busy_time			: 2,719
+power_cycles				: 55
+power_on_hours				: 50
+unsafe_shutdowns			: 31
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 82 C (355 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-16 05:14:24.516263831][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-16 05:14:24.540172026][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 10%
+endurance group critical warning summary: 0
+data_units_read				: 15,980,390
+data_units_written			: 59,178,065
+host_read_commands			: 1,060,094,179
+host_write_commands			: 3,198,606,348
+controller_busy_time			: 2,962
+power_cycles				: 55
+power_on_hours				: 54
+unsafe_shutdowns			: 31
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 83 C (356 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-06-16 09:19:49.572669013][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-06-16 09:19:49.596153665][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,106,184
+data_units_written			: 63,160,292
+host_read_commands			: 1,075,815,589
+host_write_commands			: 3,461,664,608
+controller_busy_time			: 3,205
+power_cycles				: 55
+power_on_hours				: 58
+unsafe_shutdowns			: 31
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 82 C (355 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-07-01 16:52:34.631162099][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-07-01 16:52:34.664275700][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 63 C (336 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,230,618
+data_units_written			: 63,232,966
+host_read_commands			: 1,091,367,519
+host_write_commands			: 3,463,941,589
+controller_busy_time			: 3,208
+power_cycles				: 57
+power_on_hours				: 58
+unsafe_shutdowns			: 32
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 63 C (336 Kelvin)
+Temperature Sensor 2           : 75 C (348 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-07-01 17:17:23.884916442][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-07-01 17:17:23.906486089][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 62 C (335 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,343,292
+data_units_written			: 63,315,851
+host_read_commands			: 1,105,450,228
+host_write_commands			: 3,465,704,203
+controller_busy_time			: 3,212
+power_cycles				: 57
+power_on_hours				: 58
+unsafe_shutdowns			: 32
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 62 C (335 Kelvin)
+Temperature Sensor 2           : 75 C (348 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-07-01 17:28:39.516003307][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-07-01 17:28:39.543449589][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 68 C (341 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,448,964
+data_units_written			: 63,406,686
+host_read_commands			: 1,118,657,490
+host_write_commands			: 3,467,672,721
+controller_busy_time			: 3,215
+power_cycles				: 57
+power_on_hours				: 58
+unsafe_shutdowns			: 32
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 68 C (341 Kelvin)
+Temperature Sensor 2           : 81 C (354 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-07-01 18:07:31.468038444][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-07-01 18:07:31.497314874][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 63 C (336 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,573,515
+data_units_written			: 63,507,203
+host_read_commands			: 1,134,224,750
+host_write_commands			: 3,469,748,889
+controller_busy_time			: 3,218
+power_cycles				: 57
+power_on_hours				: 58
+unsafe_shutdowns			: 32
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 63 C (336 Kelvin)
+Temperature Sensor 2           : 76 C (349 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS=2022-07-08 12:13:13.777344902][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS=2022-07-08 12:13:13.949472401][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_jnk1 nvme smart-log <device> [OPTIONS]Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 31°C (304 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 11%
+endurance group critical warning summary: 0
+data_units_read				: 16,964,222
+data_units_written			: 63,511,623
+host_read_commands			: 1,183,058,481
+host_write_commands			: 3,470,038,408
+controller_busy_time			: 3,221
+power_cycles				: 66
+power_on_hours				: 59
+unsafe_shutdowns			: 36
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 31°C (304 Kelvin)
+Temperature Sensor 2           : 35°C (308 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS:2022-07-13 13:27:55.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS:2022-07-13 13:27:55.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_jnk1 nvme smart-log <device> [OPTIONS]Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 61°C (334 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 12%
+endurance group critical warning summary: 0
+data_units_read				: 17,664,479
+data_units_written			: 63,804,811
+host_read_commands			: 1,270,586,873
+host_write_commands			: 3,478,800,794
+controller_busy_time			: 3,224
+power_cycles				: 72
+power_on_hours				: 59
+unsafe_shutdowns			: 39
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 61°C (334 Kelvin)
+Temperature Sensor 2           : 75°C (348 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]
+TC:Admin_Smart,[LOG_TS:2022-07-21 10:53:42.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 0 Start]
+TC:Admin_Smart,[LOG_TS:2022-07-21 10:53:42.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme smart-log /dev/nvme0n1 Success End_jnk1 nvme smart-log <device> [OPTIONS]Smart Log for NVME device:nvme0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 61°C (334 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 12%
+endurance group critical warning summary: 0
+data_units_read				: 17,967,142
+data_units_written			: 64,235,202
+host_read_commands			: 1,308,415,748
+host_write_commands			: 3,504,771,650
+controller_busy_time			: 3,228
+power_cycles				: 78
+power_on_hours				: 59
+unsafe_shutdowns			: 42
+media_errors				: 189
+num_err_log_entries			: 304
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 61°C (334 Kelvin)
+Temperature Sensor 2           : 75°C (348 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0]

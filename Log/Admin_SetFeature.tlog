@@ -1,0 +1,1077 @@
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:05:38.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:05:38.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 3 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:06:37.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 111111111111111111111 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:06:37.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 111111111111111111111 Fail Expected long suffixed integer argument for 'value' but got '111111111111111111111'!
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:06:54.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:06:54.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 -v 1 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:10:24.10][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f b -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:10:24.10][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f b -v 1 Fail Expected byte argument for 'feature-id' but got 'b'!
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:10:54.10][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 11 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:10:54.10][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 11 -v 1 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:29:09.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 /dev/nvme0n1 -v 0x1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:29:09.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 2 /dev/nvme0n1 -v 0x1 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:30:03.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0x1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:30:03.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0x1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:31:34.31][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0x4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-13 15:31:34.31][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0x4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:36:34.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0x4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:36:34.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0x4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:38:03.38][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:38:03.38][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ff, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:51:14.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 7 /dev/nvme0n1 -v 0xff Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:51:14.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 7 /dev/nvme0n1 -v 0xff Fail NVMe status: Command Sequence Error: The command was aborted due to a protocol violation in a multi- command sequence(0xc)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:51:53.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:51:53.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ff, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:52:06.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 255 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:52:06.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 255 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ff, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:54:38.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:54:38.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 0xff Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ff, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:57:52.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 79 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:57:52.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 79 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000004f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:57:58.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 64 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:57:58.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 64 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000040, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:01.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:01.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000037, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:02.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 198 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:02.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 198 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000c6, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:03.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 18 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:03.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 18 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000012, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:05.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 228 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:05.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 228 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000e4, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:06.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 224 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:06.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 224 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000e0, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:07.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 84 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:07.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 84 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000054, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:08.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 165 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:08.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 165 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000a5, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:09.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 240 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:09.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 240 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000f0, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:09.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 188 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:09.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 188 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000bc, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:10.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 32 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:10.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 32 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000020, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:11.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 58 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:11.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 58 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000003a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:11.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 31 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:11.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 31 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000001f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:12.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 250 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:12.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 250 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000fa, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:12.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 75 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:12.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 75 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000004b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:13.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:13.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:14.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 8 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:14.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 8 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000008, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:14.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 156 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:14.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 156 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000009c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:15.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 155 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:58:15.58][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 155 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000009b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:59:55.59][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 212 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 17:59:55.59][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 212 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:00:18.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 230 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:00:18.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 230 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000e6, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:10.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 6 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:10.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 6 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:39.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 116 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:39.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 116 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000074, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:43.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 7 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:01:43.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 7 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:27.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:27.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:28.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 204 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:28.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 204 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000cc, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:29.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:29.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:29.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:29.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:30.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:30.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:30.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:30.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:31.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:31.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:34.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 26 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:34.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 26 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000001a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:35.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 34 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:02:35.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 34 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000022, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:06:31.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:06:31.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:06:34.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:06:34.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:06:35.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:07:10.07][RUNTIME:35][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:12:58.12][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:12:58.12][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:12:59.12][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:13:04.13][RUNTIME:5][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 2 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:14.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:14.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:16.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:16.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:17.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 163 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:17.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 163 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000a3, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:18.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:18.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:19.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 134 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:19.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 134 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000086, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:20.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 168 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:20.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 168 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000a8, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:21.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 51 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:33.17][RUNTIME:12][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 51 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:38.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:38.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:39.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 52 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:39.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 52 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000034, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:40.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 15 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:40.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 15 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000000f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:40.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 17 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:40.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 17 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000011, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:41.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:41.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:42.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 42 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:17:44.17][RUNTIME:2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 42 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:05.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:06.19][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:06.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:11.19][RUNTIME:5][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:46.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 32 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:46.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 32 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000020, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:47.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:19:49.19][RUNTIME:2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:32.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 30 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:32.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 30 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000001e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:33.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 127 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:33.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 127 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000007f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:34.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:34.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:35.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:20:37.20][RUNTIME:2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 3 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:34.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1-f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:34.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1-f 3 /dev/nvme0n1 -v 0 Fail feature-id required param
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:35.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1-f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:35.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1-f 3 /dev/nvme0n1 -v 0 Fail feature-id required param
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:58.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:58.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:21:59.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:22:02.22][RUNTIME:3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:16.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:16.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000037, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:18.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:18.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:24.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:24.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:25.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:25.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:28.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v -d /LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:26:28.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v -d /LBA_Range_Type_Data Fail Expected long suffixed integer argument for 'value' but got '-d'!
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:47.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 182 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:47.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 182 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000b6, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:49.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:50.27][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000cf, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:50.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 156 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:50.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 156 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000009c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:52.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:27:52.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v -d LBA_Range_Type_Data Fail Expected long suffixed integer argument for 'value' but got '-d'!
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:30:25.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:30:25.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:30:28.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:30:28.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:31:14.31][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 3 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:31:14.31][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 3 -d LBA_Range_Type_Data Fail NVMe status: Overlapping Range: The downloaded firmware image has overlapping ranges(0x114)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:51.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:51.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:52.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 56 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:52.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 56 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000038, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:58.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 39 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:33:58.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 39 -d LBA_Range_Type_Data Fail NVMe status: Overlapping Range: The downloaded firmware image has overlapping ranges(0x114)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:38:58.38][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 151 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:38:58.38][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 151 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000097, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:00.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 171 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:00.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 171 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ab, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:01.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:01.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:02.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 110 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:02.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 110 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:03.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:03.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:03.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 84 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:04.39][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 84 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000054, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:04.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:04.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:05.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 1 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:39:05.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 1 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:40:46.40][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 1 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:40:46.40][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 1 -d LBA_Range_Type_Data Fail NVMe status: Overlapping Range: The downloaded firmware image has overlapping ranges(0x114)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:07.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:07.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:10.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:10.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:12.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 68 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:12.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 68 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000044, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:13.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:13.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:18.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:18.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:19.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:19.41][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:20.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:20.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:22.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:41:22.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:42:53.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:42:53.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:42:54.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:42:54.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:35.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:35.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:37.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 110 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:37.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 110 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:38.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:45:38.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:23.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:23.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:25.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:25.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:52.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:47:52.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:50.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:51.48][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:53.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 45 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:53.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 45 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000002d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:54.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 6 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:54.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 6 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000006, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:56.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:48:56.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:01.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:01.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:02.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:02.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:30.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 126 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:30.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 126 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000007e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:31.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 177 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:31.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 177 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000b1, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:32.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:51:32.51][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:52:56.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:52:56.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:52:58.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:52:58.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:32.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 215 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:32.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 215 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000d7, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:35.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 225 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:35.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 225 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000e1, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:36.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:36.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:37.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 251 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:37.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 251 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000fb, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:38.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 146 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:38.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 146 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000092, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:39.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:39.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:39.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:39.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:40.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:53:40.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:11.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 189 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:11.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 189 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000bd, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:12.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:12.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:12.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:12.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:13.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:13.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:13.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:13.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:53.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 18 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:53.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 18 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000012, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:54.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:54.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:55.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:55.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:55.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:55.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:56.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:54:56.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:13.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 22 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:13.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 22 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000016, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:15.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:15.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0xa
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:57.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:57.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:58.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 225 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:58.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 225 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000e1, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:59.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:59.56][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:56:59.56][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:00.57][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:00.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 107 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:00.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 107 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:01.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 39 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:01.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 39 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000027, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:02.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:03.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:03.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:03.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 18:57:03.57][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0xa0a
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:04.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:04.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:05.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 40 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:05.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 40 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000028, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:06.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:01:06.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0x31 - LBA range may be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0xa0a
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:03.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 41 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:03.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 41 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000029, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:04.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:04.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:05.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 131 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:05.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 131 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000083, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:05.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:05.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:06.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:06.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0 - Reserved
+	attributes : 0 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:28.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:28.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:29.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 21 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:29.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 21 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000015, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:30.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 117 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:30.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 117 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000075, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:30.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 173 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:31.03][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 173 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ad, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:31.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:31.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000cf, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:32.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:32.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:32.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:32.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:33.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 172 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:33.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 172 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ac, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:33.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:34.03][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:34.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:34.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:35.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:35.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:35.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:03:35.03][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x31 - Reserved
+	attributes : 0xa - LBA range should not be overwritten, LBA range should be hidden from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:05:14.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 56 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:05:14.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 56 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000038, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:05:17.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:05:17.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0xa - LBA range should not be overwritten, LBA range should be hidden from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:11.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:11.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:13.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:13.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:13.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:13.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:14.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:07:14.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0xa3030
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:37.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:37.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:38.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:38.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:39.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 215 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:39.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 215 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000d7, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:40.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:40.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:40.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 22 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:40.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 22 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000016, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:41.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:41.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:42.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 14 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:08:42.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 14 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000000e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:10.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 182 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:10.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 182 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000b6, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:11.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:11.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 55 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000037, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:12.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:12.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:13.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:13.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:13.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:09:13.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x20 - Reserved
+	attributes : 0x20 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0xa202020
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:36.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:36.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:37.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:37.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:38.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 63 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:38.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 63 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000003f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:38.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 54 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:38.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 54 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000036, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:39.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:39.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:40.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:40.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:40.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:15:40.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:56.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 97 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:57.17][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 97 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000061, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:58.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:58.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:59.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:17:59.17][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: LBA Out of Range: The command references an LBA that exceeds the size of the namespace(0x80)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:44.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:44.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:45.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 138 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:45.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 138 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000008a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:50.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 70 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:50.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 70 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000046, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:50.19][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:51.19][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:51.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 77 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:51.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 77 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000004d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:52.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:52.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:53.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 239 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:53.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 239 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000ef, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:54.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:19:54.19][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:46.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:46.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:49.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 118 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:49.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 118 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000076, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:49.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-15 19:27:49.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:02.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:02.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:04.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 251 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:04.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 251 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000fb, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:09.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:09.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:10.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 125 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:10.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 125 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000007d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:11.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 120 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:11.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 120 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000078, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:12.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:12.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:34.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 4 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:34.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 4 /dev/nvme0n1 -v 0 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:37.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 4 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:16:37.16][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 4 /dev/nvme0n1 -v 0 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:20:37.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -n 1 -f 4 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:20:37.20][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -n 1 -f 4 -v 0 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:15.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 4 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:15.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0n1 -f 4 -v 0 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:45.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:45.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:49.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:21:49.21][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:36.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 48 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:36.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 48 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000030, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:38.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:38.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:40.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 10804 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:27:40.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 10804 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00002a34, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:04.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:04.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:05.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:05.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:06.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 31235 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:06.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 31235 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00007a03, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:08.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 1741 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:09.28][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 1741 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x000006cd, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:09.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:09.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:12.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 66 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:12.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 66 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000042, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:16.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 127 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:16.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 127 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000007f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:17.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:17.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:18.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 27498 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:18.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 27498 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00006b6a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:21.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 155 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:21.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 155 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000009b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:23.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:23.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:24.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:24.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:25.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:25.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:26.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 77 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:26.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 77 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000004d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:27.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:27.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:28.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 74 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:28:28.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 74 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000004a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:30.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:30.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 108 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000006c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:31.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 24557 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:31.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 24557 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00005fed, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:33.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 20430 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:33.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 20430 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00004fce, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:33.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:33.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:34.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:34.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:34.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:29:35.29][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:20.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:20.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:21.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 15057 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:21.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 15057 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00003ad1, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:22.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 247 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:22.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 247 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000f7, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:25.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 4628 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:25.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 4628 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00001214, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:27.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 6880 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:27.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 6880 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00001ae0, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:38.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:38.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:39.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 11680 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:39.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 11680 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00002da0, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:40.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:40.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:41.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:41.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:42.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 30970 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:42.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 30970 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x000078fa, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:47.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 22133 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:47.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 22133 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00005675, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:48.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:48.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:48.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:48.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:50.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 31899 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:50.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 31899 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00007c9b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:50.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:51.32][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:51.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 13 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:52.32][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 13 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000000d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:52.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 16831 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:52.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 16831 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x000041bf, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:53.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 27344 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:53.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 27344 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00006ad0, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:54.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:54.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 2 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000002, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:55.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 85 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:55.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 85 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000055, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:56.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:56.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:57.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 11763 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:57.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 11763 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00002df3, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:59.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:59.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:59.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 19713 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:32:59.32][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 19713 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00004d01, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:00.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:00.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:03.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 26555 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:03.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 26555 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x000067bb, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:04.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:04.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 3 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000003, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:06.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:06.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:07.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:07.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 3 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x03 (LBA Range Type), value:00000000, cdw12:00000000, save:0
+	type       : 0x30 - Reserved
+	attributes : 0x30 - LBA range should not be overwritten, LBA range should be visible from the OS/EFI/BIOS
+	slba       : 0
+	nlb        : 0
+	guid       : 00000000000000000000000000000000]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:07.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 54 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:07.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 54 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x00000036, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:10.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 125 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:11.33][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 125 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000007d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:12.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:12.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 207 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x000000cf, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:13.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 497 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:13.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 497 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000001f1, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:57.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 10424 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:57.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 10424 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000028b8, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:59.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 25839 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:33:59.33][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 25839 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000064ef, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:00.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 14372 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:00.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 14372 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00003824, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:01.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 13368 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:01.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 13368 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00003438, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:01.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 16650 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:01.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 16650 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x0000410a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:02.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 12174 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:02.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 12174 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00002f8e, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:02.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 26565 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:03.34][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 26565 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000067c5, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:03.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 32349 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:03.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 32349 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00007e5d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:04.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 14440 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:04.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 14440 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00003868, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:04.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 7280 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:34:04.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 7280 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00001c70, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:36:51.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 6 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:36:51.36][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 6 /dev/nvme0n1 -v 1 Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:11.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:11.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:13.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:13.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:14.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:14.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:16.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:16.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:18.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:18.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:19.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:19.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:20.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:20.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:21.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:21.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:21.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:37:21.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:00.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:00.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:17.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 7 /dev/nvme0n1 -v 3 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:17.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 7 /dev/nvme0n1 -v 3 Fail NVMe status: Command Sequence Error: The command was aborted due to a protocol violation in a multi- command sequence(0xc)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:46.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:39:46.39][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Success ]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:41:31.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:41:31.41][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Success ]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:48:43.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:48:43.48][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND  Success ]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:34.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 17926 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:34.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 17926 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00004606, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:36.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 4274 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:36.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 4274 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x000010b2, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:36.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 11108 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:37.49][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 11108 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00002b64, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:38.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 8690 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:38.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 8690 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x000021f2, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:39.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 19667 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:39.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 19667 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00004cd3, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:40.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 8076 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:40.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 8076 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00001f8c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:42.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 18573 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:42.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 18573 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x0000488d, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:45.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 29530 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:45.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 29530 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x0000735a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:46.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 30610 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:46.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 30610 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00007792, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:46.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 2963 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:47.49][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 2963 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00000b93, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:47.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 12827 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:47.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 12827 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x0000321b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:48.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 19865 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:48.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 19865 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00004d99, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:49.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 7911 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:49.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 7911 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00001ee7, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:49.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 3335 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:49.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 3335 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00000d07, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:50.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 29747 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:50.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 29747 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00007433, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:50.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 14610 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:50.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 14610 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00003912, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:51.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 15161 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:49:51.49][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 15161 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x00003b39, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:52:25.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 19464 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:52:25.52][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 19464 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:54:09.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 14:54:09.54][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:04:53.04][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 7 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:04:53.04][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 9 /dev/nvme0n1 -v 7 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:05:32.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 9 /dev/nvme0n1 -v 7 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:05:32.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 9 /dev/nvme0n1 -v 7 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:05:33.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 9 /dev/nvme0n1 -v 7 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:05:33.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 9 /dev/nvme0n1 -v 7 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:08:56.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:08:56.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:27.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 11575 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:27.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 11575 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x00002d37, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:30.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 14603 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:30.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 14603 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x0000390b, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:31.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 25706 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:31.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 25706 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x0000646a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:32.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 17174 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:13:32.13][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 17174 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x00004316, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:26:30.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 12 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:26:30.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 12 /dev/nvme0n1 -v 0 -d LBA_Range_Type_Data Fail NVMe status: Feature Not Namespace Specific: The Feature Identifier specified is not namespace specific(0x10f)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:26:46.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:26:46.26][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:27:41.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:27:41.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0c (Autonomous Power State Transition), value:00000000, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:34:29.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 139 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:34:29.34][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 139 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0e (Timestamp), value:0x0000008b, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 8b 00 00 00 00 00 00 00                          "........�"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:35:27.35][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 9085 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:35:27.35][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 9085 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0e (Timestamp), value:0x0000237d, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 7d 23 00 00 00 00 00 00                          "}#......�"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:35:48.35][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 32460 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:35:48.35][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 32460 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0e (Timestamp), value:0x00007ecc, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: cc 7e 00 00 00 00 00 00                          ".~......�"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:37:38.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 15 /dev/nvme0n1 -v 8937 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:37:38.37][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 15 /dev/nvme0n1 -v 8937 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:40:14.40][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 27598 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:40:14.40][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 27598 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x10 (Host Controlled Thermal Management), value:0x00006bce, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:03.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:03.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:06.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:06.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:07.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:07.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:08.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:09.42][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 1 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:12.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:12.42][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:13.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:42:13.42][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 17 /dev/nvme0n1 -v 0 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:43:55.43][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 563 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:43:55.43][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 563 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:38.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 6504 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:38.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 6504 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:41.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 25715 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:41.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 25715 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:42.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 11473 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:42.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 11473 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:44.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 9792 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:45:44.45][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 18 /dev/nvme0n1 -v 9792 Fail NVMe status: Invalid Field in Command: A reserved coded value or an unsupported value in a defined field(0x2)
+jnk1 nvme set-feature <device> [OPTIONS]]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:46:58.46][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:46:58.46][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:00.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:00.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:02.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 30074 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:02.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 30074 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x0000757a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:05.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 28076 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:05.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 28076 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x10 (Host Controlled Thermal Management), value:0x00006dac, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:12.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 22271 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:12.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 8 /dev/nvme0n1 -v 22271 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x08 (Interrupt Coalescing), value:0x000056ff, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:18.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 28725 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:18.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 16 /dev/nvme0n1 -v 28725 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x10 (Host Controlled Thermal Management), value:0x00007035, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:20.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:21.47][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 6 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x06 (Volatile Write Cache), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:22.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 1327 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:22.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 1327 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x0000052f, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:23.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 947 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:23.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 947 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000003b3, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:25.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 31234 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:25.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 31234 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x00007a02, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:26.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 0 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:26.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 0 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:00000000, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:27.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:27.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:28.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 31439 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:28.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 31439 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00007acf, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:29.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:29.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0c (Autonomous Power State Transition), value:00000000, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:30.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:30.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:32.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:32.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0c (Autonomous Power State Transition), value:00000000, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:33.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 986 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:33.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 986 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x000003da, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:34.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 19064 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:34.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 11 /dev/nvme0n1 -v 19064 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0b (Async Event Configuration), value:0x00004a78, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:35.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 12604 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:35.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 12604 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x0000313c, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:35.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:35.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 10 /dev/nvme0n1 -v 1 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0a (Write Atomicity Normal), value:0x00000001, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:37.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 7255 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:37.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 7255 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00001c57, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:38.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 13669 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:39.47][RUNTIME:1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 4 /dev/nvme0n1 -v 13669 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x04 (Temperature Threshold), value:0x00003565, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:40.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 58 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:40.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 1 /dev/nvme0n1 -v 58 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x01 (Arbitration), value:0x0000003a, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:41.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 12421 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:41.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 14 /dev/nvme0n1 -v 12421 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0e (Timestamp), value:0x00003085, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 85 30 00 00 00 00 00 00                          ".0......�"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:41.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:41.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 2 /dev/nvme0n1 -v 4 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x02 (Power Management), value:0x00000004, cdw12:00000000, save:0]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:43.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:43.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -f 12 /dev/nvme0n1 -v 0 -d APST_Data Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x0c (Autonomous Power State Transition), value:00000000, cdw12:00000000, save:0
+       0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+0000: 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0050: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0060: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0070: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+0090: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00a0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00b0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"
+00f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "................"]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:44.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 4181 Start]
+TC:Admin_SetFeature,[LOG_TS:2022-07-16 15:47:44.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme set-feature /dev/nvme0 -n 1 -f 5 /dev/nvme0n1 -v 4181 Success jnk1 nvme set-feature <device> [OPTIONS]set-feature:0x05 (Error Recovery), value:0x00001055, cdw12:00000000, save:0]

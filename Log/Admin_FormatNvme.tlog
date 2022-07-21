@@ -1,0 +1,181 @@
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:07:47.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l &LBAF -s 1 -i 0 -p 0 -m EXTENDED 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:07:47.07][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l &LBAF -s 1 -i 0 -p 0 -m EXTENDED Fail Expected byte argument for 'lbaf' but got '&LBAF'!
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:08:22.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m EXTENDED 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:08:22.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m EXTENDED Fail Expected byte argument for 'ms' but got 'EXTENDED'!
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:08:50.08][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:09:00.09][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:09:35.09][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 3 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:09:45.09][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 3 -p 1 -m 1 Fail You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+NVMe status: Invalid Format: The LBA Format specified is not supported(0x10a)
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:23:57.23][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 0 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:24:07.24][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 0 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:24:34.24][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:24:44.24][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:27:37.27][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:27:54.27][RUNTIME:17][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:28:19.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:28:29.28][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:28:57.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 1 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:29:07.29][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 1 -p 0 -m 1 Fail You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+NVMe status: Invalid Format: The LBA Format specified is not supported(0x10a)
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:29:46.29][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 2 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:29:56.29][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 2 -p 0 -m 1 Fail You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+NVMe status: Invalid Format: The LBA Format specified is not supported(0x10a)
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:30:20.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 3 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:30:30.30][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 3 -p 0 -m 1 Fail You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+NVMe status: Invalid Format: The LBA Format specified is not supported(0x10a)
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:30:53.30][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:31:03.31][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:31:17.31][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 16:31:27.31][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:05:05.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i  -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:05:05.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i  -p 1 -m 1 Fail Expected byte argument for 'pi' but got '-p'!
+jnk1 nvme format <device> [OPTIONS]]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:05:37.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:05:47.05][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:05:53.05][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:06:03.06][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:06:14.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:06:25.06][RUNTIME:11][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:06:46.06][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:07:02.07][RUNTIME:16][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 1 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:11:33.11][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:11:49.11][RUNTIME:16][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:11:51.11][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:12:01.12][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 0 -i 0 -p 1 -m 1 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:15:36.15][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:15:46.15][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 0 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:22:58.22][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-12 17:23:14.23][RUNTIME:16][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 0 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-13 13:28:13.28][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-13 13:28:23.28][RUNTIME:10][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 2 -i 0 -p 1 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-21 10:53:54.53][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 1 -m 0 0 Start]
+TC:Admin_FormatNvme,[LOG_TS:2022-07-21 10:54:10.54][RUNTIME:16][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme format /dev/nvme0n1 -l 0 -s 1 -i 0 -p 1 -m 0 Success You are about to format nvme0n1, namespace 0xffffffff(ALL namespaces).
+WARNING: Format may irrevocably delete this device's data.
+You have 10 seconds to press Ctrl-C to cancel this operation.
+
+Use the force [--force] option to suppress this warning.
+Sending format operation ... 
+jnk1 nvme format <device> [OPTIONS]Success formatting namespace:ffffffff]

@@ -1,0 +1,29 @@
+TC:Admin_effectslog,[LOG_TS:2022-07-16 16:02:43.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 0 Start]
+TC:Admin_effectslog,[LOG_TS:2022-07-16 16:02:43.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 Success End_jnk1 nvme effects-log <device> [OPTIONS]NVM Command Set Log Page
+--------------------------------------------------------------------------------
+Admin Commands
+ACS0     [Delete I/O Submission Queue     ] 00000001
+ACS1     [Create I/O Submission Queue     ] 00000001
+ACS2     [Get Log Page                    ] 00000001
+ACS4     [Delete I/O Completion Queue     ] 00000001
+ACS5     [Create I/O Completion Queue     ] 00000001
+ACS6     [Identify                        ] 00000001
+ACS8     [Abort                           ] 00000001
+ACS9     [Set Features                    ] 00000001
+ACS10    [Get Features                    ] 00000001
+ACS12    [Asynchronous Event Request      ] 00000001
+ACS16    [Firmware Commit                 ] 00000001
+ACS17    [Firmware Image Download         ] 00000001
+ACS20    [Device Self-test                ] 00000001
+ACS128   [Format NVM                      ] 00020003
+ACS129   [Security Send                   ] 00020003
+ACS130   [Security Receive                ] 00010001
+ACS132   [Sanitize                        ] 00020003
+
+I/O Commands
+IOCS0    [Flush                           ] 00010001
+IOCS1    [Write                           ] 00000003
+IOCS2    [Read                            ] 00000001
+IOCS4    [Write Uncorrectable             ] 00000003
+IOCS5    [Compare                         ] 00000001
+IOCS9    [Dataset Management              ] 00010003]

@@ -2,9 +2,16 @@
 
 dir="$(dirname "$0")"
 #echo "$dir"
+source "$dir/body_Func.sh"
+source "$dir/body_fio.sh"
 
-for((i=0;i<3;i++))
+#./io_nvme_write.sh 2
+#./io_fio_RndRead.sh 10
+
+#:<<'END'
+for((i=0;i<1;i++))
 do
+#./io_nvme_write_zeroes.sh
 #./io_fullwrite.sh
 ./io_nvme_write.sh 6
 ./io_fio_RndRead.sh 10
@@ -21,4 +28,21 @@ do
 ./io_fio_RndWrite.sh 30
 ./adm_Smart.sh
 ./adm_Device_self_test.sh
+./io_nvme_compare.sh
+#./io_nvme_write_uncor.sh
+#./io_nvme_write_zeroes.sh
+./adm_Sanitize.sh
+./io_nvme_write.sh 6
+./io_nvme_reservation_register.sh
+./adm_ErrorLog.sh
+./adm_FormatNVMe.sh
+./io_nvme_reservation_Report.sh
+./io_nvme_reservation_release.sh
+./io_fio_RndWrite.sh 30
+./io_nvme_reservation_acquire.sh
+./adm_SetFearue.sh
+./adm_ErrorLog.sh
+./adm_GetFeature.sh
+./io_nvme_read.sh
 done
+#END

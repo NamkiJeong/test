@@ -1,0 +1,1837 @@
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:44.942020564][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32080 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:44.969148000][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32080 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.002073565][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 11219 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.028476822][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 11219 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.061332253][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20900 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.087922062][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20900 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.120939095][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16721 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.147449729][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16721 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.180370848][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30111 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.207225089][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30111 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.240080301][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31817 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.266855623][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31817 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.299912795][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25177 -c 6 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.326675751][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25177 -c 6 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.359604415][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30603 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.386069344][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30603 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.419323253][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3823 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.445544083][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3823 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.478547582][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10300 -c 6 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.505099028][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10300 -c 6 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.538108564][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17228 -c 1 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.565018971][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17228 -c 1 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.598095078][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 28731 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.624892537][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 28731 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.657781062][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16286 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.684518986][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16286 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.717464950][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29370 -c 3 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.744169597][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29370 -c 3 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.777747693][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16927 -c 6 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.804109714][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16927 -c 6 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.836983907][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27659 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.863493083][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27659 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.896607635][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27914 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.923510775][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27914 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.956509530][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19916 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:45.983068577][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19916 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.015964195][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32600 -c 4 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.042662115][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32600 -c 4 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.076055627][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25354 -c 5 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.102541313][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25354 -c 5 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.136126224][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22509 -c 6 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.162457812][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22509 -c 6 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.195317752][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 21458 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.222193194][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 21458 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.255239823][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22437 -c 4 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.282002840][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22437 -c 4 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.315103163][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3741 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.341861428][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3741 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.375246131][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14279 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.401892877][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14279 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.434970903][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 24166 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.461456295][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 24166 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.494638154][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13195 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.521434805][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13195 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.554748718][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23738 -c 3 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.581532425][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23738 -c 3 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.614424540][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16992 -c 6 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.641433749][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16992 -c 6 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.674632472][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25777 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.701391363][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25777 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.734638786][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18684 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.761537147][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18684 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.794564114][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13704 -c 0 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.821198957][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13704 -c 0 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.854408131][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2360 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.881557185][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2360 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.914844853][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7140 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.941428986][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7140 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:46.974567994][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7433 -c 6 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.001648936][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7433 -c 6 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.034750060][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10310 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.061829445][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10310 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.095154646][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23708 -c 5 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.121807671][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23708 -c 5 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.149748378][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27714 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.162088640][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27714 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.177297890][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 28405 -c 2 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.189562303][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 28405 -c 2 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.204648168][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17304 -c 5 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.217146353][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17304 -c 5 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.231978109][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16437 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.244710372][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16437 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.259802796][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2657 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.272677638][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2657 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.287876788][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7206 -c 1 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.299926587][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7206 -c 1 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.315251205][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18133 -c 4 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.327129102][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18133 -c 4 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.342649579][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20655 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.354544485][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20655 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.369498018][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10853 -c 2 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.381731099][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10853 -c 2 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.396696304][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4428 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.408995673][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4428 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.423907624][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17608 -c 6 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.436675358][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17608 -c 6 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.451608872][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17924 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.463704878][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17924 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.478931232][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5750 -c 1 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.490883541][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5750 -c 1 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.506386965][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 953 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.518356545][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 953 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.533800364][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14898 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.545748577][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14898 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.561170456][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5319 -c 1 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.573251724][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5319 -c 1 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.588371318][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5048 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.600752771][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5048 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.615683849][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14732 -c 3 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.628018811][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14732 -c 3 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.642985100][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15296 -c 3 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.655234502][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15296 -c 3 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.670420338][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23468 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.683078176][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23468 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.697825587][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3477 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.709756136][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3477 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.725143026][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 634 -c 1 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.737196045][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 634 -c 1 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.752501828][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15582 -c 6 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.764549491][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15582 -c 6 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.779714578][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32505 -c 0 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.791998176][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32505 -c 0 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.806949102][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22741 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.819329775][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22741 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.834453592][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10155 -c 0 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.847201724][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10155 -c 0 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.862265901][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25544 -c 1 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.874939757][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25544 -c 1 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.890266616][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12811 -c 5 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.902530034][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12811 -c 5 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.917877110][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10481 -c 4 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.929968481][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 10481 -c 4 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.945874521][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16917 -c 6 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.957985244][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16917 -c 6 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.973549521][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22887 -c 4 -l 1 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:47.985808407][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22887 -c 4 -l 1 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:48.001112724][RUNTIME=4][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23609 -c 5 -l 0 -p 0 -m  0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:03:48.013519229][RUNTIME=4][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23609 -c 5 -l 0 -p 0 -m  End_verify: option requires an argument -- 'm'
+Verify specified logical blocks on the given device.  [  --namespace-id=<NUM>, -n <NUM> ]   --- desired namespace
+  [  --start-block=<IONUM>, -s <IONUM> ] --- 64-bit LBA of first block to
+                                            access
+  [  --block-count=<NUM>, -c <NUM> ]    --- number of blocks (zeroes based)
+                                            on device to access
+  [  --limited-retry, -l ]              --- limit media access attempts
+  [  --force-unit-access, -f ]          --- force device to commit cached
+                                            data before performing the
+                                            verify operation
+  [  --prinfo=<NUM>, -p <NUM> ]         --- PI and check field
+  [  --ref-tag=<NUM>, -r <NUM> ]        --- reference tag (for end to end PI)
+  [  --app-tag=<NUM>, -a <NUM> ]        --- app tag (for end to end PI)
+  [  --app-tag-mask=<NUM>, -m <NUM> ]   --- app tag mask (for end to end PI)
+  [  --storage-tag=<IONUM>, -S <IONUM> ] --- storage tag, CDW2 and CDW3
+                                            (00:47) bits (for end to end PI)
+  [  --storage-tag-check, -C ]          --- This bit specifies the Storage
+                                            Tag field shall be checked as
+                                            part of Verify operation
+[1mUsage: nvme verify <device> [OPTIONS][0m
+
+
+
+[1mOptions:[0m]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.837419681][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31105 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.869300141][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31105 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.901613280][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12886 -c 4 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.925829570][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12886 -c 4 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.958781934][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27678 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:15.982574362][RUNTIME=0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27678 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.016051307][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 8412 -c 2 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.040328673][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 8412 -c 2 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.073342967][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 21251 -c 1 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.097394875][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 21251 -c 1 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.130615652][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7063 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.154922218][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7063 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.187927060][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9650 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.212051331][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9650 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.245158224][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17042 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.268926250][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17042 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.301648587][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18624 -c 1 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.325664661][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 18624 -c 1 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.358425340][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20558 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.382615658][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20558 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.415389347][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1732 -c 5 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.439559337][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1732 -c 5 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.472635814][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9570 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.496114853][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9570 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.528968873][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31949 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.552927570][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31949 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.585768595][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30710 -c 5 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.609724419][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30710 -c 5 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.642733506][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19212 -c 2 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.666671621][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19212 -c 2 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.699399173][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29611 -c 4 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.723221101][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29611 -c 4 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.756022760][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 229 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.779941661][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 229 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.812720569][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15795 -c 0 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.836528495][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15795 -c 0 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.869375998][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32590 -c 0 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.893013569][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 32590 -c 0 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.926447639][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31062 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.949948310][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 31062 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:16.982852981][RUNTIME=1][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16573 -c 1 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.006947184][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16573 -c 1 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.040037635][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30593 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.064143053][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30593 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.096938100][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29498 -c 5 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.120693889][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29498 -c 5 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.153897303][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15842 -c 0 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.177817903][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15842 -c 0 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.210631870][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5508 -c 2 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.234526169][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 5508 -c 2 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.267474868][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16237 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.290864857][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16237 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.323432716][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12917 -c 0 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.347549166][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 12917 -c 0 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.380310717][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23770 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.404270589][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 23770 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.436983795][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4755 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.460704999][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4755 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.493410634][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1751 -c 1 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.517400226][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1751 -c 1 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.550099259][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30998 -c 1 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.573743124][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30998 -c 1 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.606560729][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1021 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.630452399][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1021 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.663297247][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7681 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.687389722][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7681 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.720222393][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4318 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.743943988][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4318 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.777293859][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29327 -c 0 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.800878810][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 29327 -c 0 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.833723856][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2226 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.857932894][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2226 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.890569555][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20106 -c 3 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.914445410][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 20106 -c 3 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.947415879][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4016 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:17.970915870][RUNTIME=2][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 4016 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.003704693][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1295 -c 1 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.027585160][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1295 -c 1 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.060441464][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 864 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.084293047][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 864 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.117238673][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1288 -c 6 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.140917557][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 1288 -c 6 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.173737329][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14004 -c 0 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.197704626][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 14004 -c 0 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.230672368][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22288 -c 2 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.254619407][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 22288 -c 2 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.287403348][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3244 -c 2 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.311198057][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 3244 -c 2 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.343967193][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25844 -c 5 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.367987912][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 25844 -c 5 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.400794590][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2251 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.424440328][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 2251 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.457250292][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16028 -c 0 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.481255730][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 16028 -c 0 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.514109858][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7827 -c 2 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.538019326][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 7827 -c 2 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.570906100][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9048 -c 3 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.594580769][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 9048 -c 3 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.627369008][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15819 -c 5 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.651299586][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 15819 -c 5 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.683946404][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27517 -c 5 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.708202004][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 27517 -c 5 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.741123722][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 24498 -c 0 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.764889042][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 24498 -c 0 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.798189913][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17591 -c 2 -l 1 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.821575210][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 17591 -c 2 -l 1 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.854353728][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13951 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.878405674][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 13951 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.911283613][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30225 -c 4 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.935255505][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 30225 -c 4 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.967785892][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19369 -c 6 -l 0 -p 0 0 Start]
+TC:NVMe_Verify,[LOG_TS=2022-06-13 19:05:18.991685451][RUNTIME=3][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme verify /dev/nvme0n1 -s 19369 -c 6 -l 0 -p 0 End_NVMe status: INVALID_OPCODE: The associated command opcode field is not valid(0x1)]

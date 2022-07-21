@@ -1,0 +1,95 @@
+/dev/nvme0n1: (g=0): rw=read, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=64
+...
+fio-3.28
+Starting 4 processes
+
+/dev/nvme0n1: (groupid=0, jobs=1): err= 0: pid=11927: Wed Jul 13 13:25:08 2022
+  read: IOPS=212k, BW=828MiB/s (868MB/s)(24.2GiB/30001msec)
+    slat (nsec): min=1546, max=4242.5k, avg=2321.04, stdev=2336.66
+    clat (usec): min=79, max=9778, avg=298.95, stdev=318.62
+     lat (usec): min=93, max=9780, avg=301.32, stdev=318.64
+    clat percentiles (usec):
+     |  1.00th=[  111],  5.00th=[  117], 10.00th=[  121], 20.00th=[  126],
+     | 30.00th=[  130], 40.00th=[  135], 50.00th=[  143], 60.00th=[  159],
+     | 70.00th=[  210], 80.00th=[  420], 90.00th=[  848], 95.00th=[ 1090],
+     | 99.00th=[ 1336], 99.50th=[ 1385], 99.90th=[ 1434], 99.95th=[ 1450],
+     | 99.99th=[ 2409]
+   bw (  KiB/s): min=829544, max=858320, per=24.99%, avg=847759.86, stdev=4671.09, samples=59
+   iops        : min=207386, max=214580, avg=211939.97, stdev=1167.77, samples=59
+  lat (usec)   : 100=0.02%, 250=73.62%, 500=8.34%, 750=5.80%, 1000=5.55%
+  lat (msec)   : 2=6.66%, 4=0.01%, 10=0.01%
+  cpu          : usr=39.46%, sys=49.02%, ctx=651816, majf=0, minf=75
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=6355849,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+/dev/nvme0n1: (groupid=0, jobs=1): err= 0: pid=11928: Wed Jul 13 13:25:08 2022
+  read: IOPS=212k, BW=828MiB/s (868MB/s)(24.3GiB/30001msec)
+    slat (nsec): min=1540, max=2210.9k, avg=2316.30, stdev=2472.19
+    clat (usec): min=69, max=8270, avg=298.84, stdev=316.83
+     lat (usec): min=94, max=8284, avg=301.21, stdev=316.85
+    clat percentiles (usec):
+     |  1.00th=[  111],  5.00th=[  117], 10.00th=[  121], 20.00th=[  126],
+     | 30.00th=[  130], 40.00th=[  135], 50.00th=[  143], 60.00th=[  159],
+     | 70.00th=[  210], 80.00th=[  416], 90.00th=[  848], 95.00th=[ 1090],
+     | 99.00th=[ 1336], 99.50th=[ 1385], 99.90th=[ 1434], 99.95th=[ 1450],
+     | 99.99th=[ 2442]
+   bw (  KiB/s): min=829648, max=855808, per=25.00%, avg=847993.36, stdev=4027.91, samples=59
+   iops        : min=207412, max=213952, avg=211998.34, stdev=1006.99, samples=59
+  lat (usec)   : 100=0.02%, 250=73.66%, 500=8.34%, 750=5.76%, 1000=5.56%
+  lat (msec)   : 2=6.65%, 4=0.01%, 10=0.01%
+  cpu          : usr=40.36%, sys=48.27%, ctx=646299, majf=0, minf=78
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=6358089,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+/dev/nvme0n1: (groupid=0, jobs=1): err= 0: pid=11929: Wed Jul 13 13:25:08 2022
+  read: IOPS=212k, BW=829MiB/s (869MB/s)(24.3GiB/30001msec)
+    slat (nsec): min=1512, max=2204.6k, avg=2310.65, stdev=1780.79
+    clat (usec): min=74, max=8310, avg=298.52, stdev=316.08
+     lat (usec): min=94, max=8323, avg=300.89, stdev=316.09
+    clat percentiles (usec):
+     |  1.00th=[  111],  5.00th=[  117], 10.00th=[  121], 20.00th=[  126],
+     | 30.00th=[  130], 40.00th=[  135], 50.00th=[  143], 60.00th=[  159],
+     | 70.00th=[  210], 80.00th=[  416], 90.00th=[  840], 95.00th=[ 1090],
+     | 99.00th=[ 1336], 99.50th=[ 1385], 99.90th=[ 1434], 99.95th=[ 1450],
+     | 99.99th=[ 1647]
+   bw (  KiB/s): min=835472, max=855768, per=25.03%, avg=849091.12, stdev=3621.00, samples=59
+   iops        : min=208868, max=213942, avg=212272.78, stdev=905.25, samples=59
+  lat (usec)   : 100=0.02%, 250=73.66%, 500=8.36%, 750=5.78%, 1000=5.56%
+  lat (msec)   : 2=6.63%, 4=0.01%, 10=0.01%
+  cpu          : usr=38.71%, sys=49.72%, ctx=653640, majf=0, minf=77
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=6365137,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+/dev/nvme0n1: (groupid=0, jobs=1): err= 0: pid=11930: Wed Jul 13 13:25:08 2022
+  read: IOPS=212k, BW=828MiB/s (869MB/s)(24.3GiB/30001msec)
+    slat (nsec): min=1521, max=2184.4k, avg=2302.52, stdev=1887.45
+    clat (usec): min=67, max=8334, avg=298.62, stdev=315.95
+     lat (usec): min=92, max=8347, avg=300.98, stdev=315.96
+    clat percentiles (usec):
+     |  1.00th=[  111],  5.00th=[  117], 10.00th=[  121], 20.00th=[  126],
+     | 30.00th=[  130], 40.00th=[  135], 50.00th=[  143], 60.00th=[  159],
+     | 70.00th=[  212], 80.00th=[  416], 90.00th=[  840], 95.00th=[ 1090],
+     | 99.00th=[ 1336], 99.50th=[ 1385], 99.90th=[ 1434], 99.95th=[ 1450],
+     | 99.99th=[ 1516]
+   bw (  KiB/s): min=822936, max=854984, per=25.02%, avg=848616.68, stdev=4487.76, samples=59
+   iops        : min=205734, max=213746, avg=212154.17, stdev=1121.94, samples=59
+  lat (usec)   : 100=0.02%, 250=73.60%, 500=8.38%, 750=5.79%, 1000=5.56%
+  lat (msec)   : 2=6.65%, 4=0.01%, 10=0.01%
+  cpu          : usr=40.24%, sys=48.25%, ctx=659790, majf=0, minf=76
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=100.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwts: total=6363051,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=3313MiB/s (3474MB/s), 828MiB/s-829MiB/s (868MB/s-869MB/s), io=97.1GiB (104GB), run=30001-30001msec
+
+Disk stats (read/write):
+  nvme0n1: ios=25353962/0, merge=0/0, ticks=7271328/0, in_queue=7271328, util=99.69%

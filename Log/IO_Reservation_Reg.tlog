@@ -1,0 +1,9 @@
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-12 18:00:26.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-register /dev/nvme0n1 -n 0 -c 0 -k  -i 0 -r 0 -p 0 0 Start]
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-12 18:00:26.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-register /dev/nvme0n1 -n 0 -c 0 -k  -i 0 -r 0 -p 0 Fail End_Expected long suffixed integer argument for 'nrkey' but got '-i'!
+jnk1 nvme resv-register <device> [OPTIONS]]
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-12 18:02:37.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-register /dev/nvme0n1 -n 0 -c 0 -k 0 -i 0 -r 0 -p 0 0 Start]
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-12 18:02:37.02][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-register /dev/nvme0n1 -n 0 -c 0 -k 0 -i 0 -r 0 -p 0 Fail End_NVMe status: Invalid Command Opcode: A reserved coded value or an unsupported value in the command opcode field(0x1)
+jnk1 nvme resv-register <device> [OPTIONS]]
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-13 11:47:08.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-report /dev/nvme0n1 -o normal > ./Log/Reservation_Report.Log 0 Start]
+TC:IO_Reservation_Reg,[LOG_TS:2022-07-13 11:47:08.47][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme resv-report /dev/nvme0n1 -o normal > ./Log/Reservation_Report.Log Fail End_NVMe status: Invalid Command Opcode: A reserved coded value or an unsupported value in the command opcode field(0x1)
+jnk1 nvme resv-report <device> [OPTIONS]]

@@ -30,7 +30,6 @@ GetTestName()
 	echo -n $TestName
 }	
 
-
 #PCI_FULL_PATH=
 RangeRandom()
 {
@@ -72,15 +71,17 @@ tDevname()
 TCLog()
 {
 
-	DATE_v=`date '+%Y-%m-%d %H:%M:%S.%N'`
+	DATE_v=`date '+%Y-%m-%d %H:%M:%S.%M'`
 	UPTIME_v=$(GET_RUN_TIME)
 
-	logstring="[LOG_TS=$DATE_v][RUNTIME=$UPTIME_v][$1]"
+	logstring="[LOG_TS:$DATE_v][RUNTIME:$UPTIME_v][$1]"
 
 	logstring="${logstring}[$(tDevname) : $@]"
 
 		echo "[$(GetTestName)]${logstring}"
                 echo "TC:$(GetTestName),${logstring}" | sed 's/\x1b\[0-9;]*m//g' >> $tLogpath/$(GetTestName).tlog
+  echo "TC:$(GetTestName),${logstring}" | sed 's/\x1b\[0-9;]*m//g' >> $tLogpath/MainLog.tlog
+
 
 }
 
@@ -91,13 +92,9 @@ Log_COMPLETED()
 }
 
 
-YELLOW_RED="43;31"
 Log_CMD()
 {
-         STRING=`echo -e "\e[${YELLOW_RED}m $* \e[0m"` 
 	 TCLog "LOG:COMMAND" "$@"
-	
- 	 #TCLog "LOG:COMMAND" "${STRING}"
 }
 
 Log_IO()
@@ -109,8 +106,6 @@ Log_INFO()
 {
         TCLog "LOG:INFO" "$@"
 }
-
-
 
 
 #temp=$(RangeRandom 1 4)

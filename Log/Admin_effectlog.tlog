@@ -1,0 +1,194 @@
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:00:06.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effect-log /dev/nvme0n1 0 Start]
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:00:06.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effect-log /dev/nvme0n1 Fail End_The '<device>' may be either an NVMe character device (ex: /dev/nvme0) or an
+nvme block device (ex: /dev/nvme0n1).jnk1 nvme effect-log <device> [OPTIONS]ERROR: Invalid sub-command 'effect-log'
+nvme-2.0
+usage: nvme <command> [<device>] [<args>]
+
+
+
+The following are all implemented sub-commands:
+  list                         List all NVMe devices and namespaces on machine
+  list-subsys                  List nvme subsystems
+  id-ctrl                      Send NVMe Identify Controller
+  id-ns                        Send NVMe Identify Namespace, display structure
+  id-ns-granularity            Send NVMe Identify Namespace Granularity List, display structure
+  id-ns-lba-format             Send NVMe Identify Namespace for the specified LBA Format index, display structure
+  list-ns                      Send NVMe Identify List, display structure
+  list-ctrl                    Send NVMe Identify Controller List, display structure
+  nvm-id-ctrl                  Send NVMe Identify Controller NVM Command Set, display structure
+  nvm-id-ns                    Send NVMe Identify Namespace NVM Command Set, display structure
+  nvm-id-ns-lba-format         Send NVMe Identify Namespace NVM Command Set for the specified LBA Format index, display structure
+  primary-ctrl-caps            Send NVMe Identify Primary Controller Capabilities
+  list-secondary               List Secondary Controllers associated with a Primary Controller
+  cmdset-ind-id-ns             I/O Command Set Independent Identify Namespace
+  ns-descs                     Send NVMe Namespace Descriptor List, display structure
+  id-nvmset                    Send NVMe Identify NVM Set List, display structure
+  id-uuid                      Send NVMe Identify UUID List, display structure
+  id-iocs                      Send NVMe Identify I/O Command Set, display structure
+  id-domain                    Send NVMe Identify Domain List, display structure
+  list-endgrp                  Send NVMe Identify Endurance Group List, display structure
+  create-ns                    Creates a namespace with the provided parameters
+  delete-ns                    Deletes a namespace from the controller
+  attach-ns                    Attaches a namespace to requested controller(s)
+  detach-ns                    Detaches a namespace from requested controller(s)
+  get-ns-id                    Retrieve the namespace ID of opened block device
+  get-log                      Generic NVMe get log, returns log in raw format
+  telemetry-log                Retrieve FW Telemetry log write to file
+  fw-log                       Retrieve FW Log, show it
+  changed-ns-list-log          Retrieve Changed Namespace List, show it
+  smart-log                    Retrieve SMART Log, show it
+  ana-log                      Retrieve ANA Log, show it
+  error-log                    Retrieve Error Log, show it
+  effects-log                  Retrieve Command Effects Log, show it
+  endurance-log                Retrieve Endurance Group Log, show it
+  predictable-lat-log          Retrieve Predictable Latency per Nvmset Log, show it
+  pred-lat-event-agg-log       Retrieve Predictable Latency Event Aggregate Log, show it
+  persistent-event-log         Retrieve Presistent Event Log, show it
+  endurance-event-agg-log      Retrieve Endurance Group Event Aggregate Log, show it
+  lba-status-log               Retrieve LBA Status Information Log, show it
+  resv-notif-log               Retrieve Reservation Notification Log, show it
+  boot-part-log                Retrieve Boot Partition Log, show it
+  get-feature                  Get feature and show the resulting value
+  device-self-test             Perform the necessary tests to observe the performance
+  self-test-log                Retrieve the SELF-TEST Log, show it
+  supported-log-pages          Retrieve the Supported Log pages details, show it
+  fid-support-effects-log      Retrieve FID Support and Effects log and show it
+  mi-cmd-support-effects-log   Retrieve MI Command Support and Effects log and show it
+  media-unit-stat-log          Retrieve the configuration and wear of media units, show it
+  supported-cap-config-log     Retrieve the list of Supported Capacity Configuration Descriptors
+  set-feature                  Set a feature and show the resulting value
+  set-property                 Set a property and show the resulting value
+  get-property                 Get a property and show the resulting value
+  format                       Format namespace with new block format
+  fw-commit                    Verify and commit firmware to a specific slot (fw-activate in old version < 1.2)
+  fw-download                  Download new firmware
+  admin-passthru               Submit an arbitrary admin command, return results
+  io-passthru                  Submit an arbitrary IO command, return results
+  security-send                Submit a Security Send command, return results
+  security-recv                Submit a Security Receive command, return results
+  get-lba-status               Submit a Get LBA Status command, return results
+  capacity-mgmt                Submit Capacity Management Command, return results
+  resv-acquire                 Submit a Reservation Acquire, return results
+  resv-register                Submit a Reservation Register, return results
+  resv-release                 Submit a Reservation Release, return results
+  resv-report                  Submit a Reservation Report, return results
+  dsm                          Submit a Data Set Management command, return results
+  copy                         Submit a Simple Copy command, return results
+  flush                        Submit a Flush command, return results
+  compare                      Submit a Compare command, return results
+  read                         Submit a read command, return results
+  write                        Submit a write command, return results
+  write-zeroes                 Submit a write zeroes command, return results
+  write-uncor                  Submit a write uncorrectable command, return results
+  verify                       Submit a verify command, return results
+  sanitize                     Submit a sanitize command
+  sanitize-log                 Retrieve sanitize log, show it
+  reset                        Resets the controller
+  subsystem-reset              Resets the subsystem
+  ns-rescan                    Rescans the NVME namespaces
+  show-regs                    Shows the controller registers or properties. Requires character device
+  discover                     Discover NVMeoF subsystems
+  connect-all                  Discover and Connect to NVMeoF subsystems
+  connect                      Connect to NVMeoF subsystem
+  disconnect                   Disconnect from NVMeoF subsystem
+  disconnect-all               Disconnect from all connected NVMeoF subsystems
+  config                       Configuration of NVMeoF subsystems
+  gen-hostnqn                  Generate NVMeoF host NQN
+  show-hostnqn                 Show NVMeoF host NQN
+  gen-dhchap-key               Generate NVMeoF DH-HMAC-CHAP host key
+  check-dhchap-key             Validate NVMeoF DH-HMAC-CHAP host key
+  gen-tls-key                  Generate NVMeoF TLS PSK
+  check-tls-key                Validate NVMeoF TLS PSK
+  dir-receive                  Submit a Directive Receive command, return results
+  dir-send                     Submit a Directive Send command, return results
+  virt-mgmt                    Manage Flexible Resources between Primary and Secondary Controller 
+  rpmb                         Replay Protection Memory Block commands
+  lockdown                     Submit a Lockdown command,return result
+  dim                          Send Discovery Information Management command to a Discovery Controller
+  version                      Shows the program version
+  help                         Display this help
+
+See 'nvme help <command>' for more information on a specific command
+
+The following are all installed plugin extensions:
+  amzn            Amazon vendor specific extensions
+  dell            DELL vendor specific extensions
+  dera            Dera vendor specific extensions
+  huawei          Huawei vendor specific extensions
+  intel           Intel vendor specific extensions
+  innogrit        innogrit vendor specific extensions
+  memblaze        Memblaze vendor specific extensions
+  micron          Micron vendor specific extensions
+  netapp          NetApp vendor specific extensions
+  nvidia          NVIDIA vendor specific extensions
+  sfx             ScaleFlux vendor specific extensions
+  seagate         Seagate vendor specific extensions
+  shannon         Shannon vendor specific extensions
+  solidigm        Solidigm vendor specific extensions
+  toshiba         Toshiba NVME plugin
+  transcend       Transcend vendor specific extensions
+  virtium         Virtium vendor specific extensions
+  wdc             Western Digital vendor specific extensions
+  ymtc            Ymtc vendor specific extensions
+  zns             Zoned Namespace Command Set
+  ocp             OCP cloud SSD extensions
+
+See 'nvme <plugin> help' for more information on a plugin]
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:00:49.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 0 Start]
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:00:49.00][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 Success End_jnk1 nvme effects-log <device> [OPTIONS]NVM Command Set Log Page
+--------------------------------------------------------------------------------
+Admin Commands
+ACS0     [Delete I/O Submission Queue     ] 00000001
+ACS1     [Create I/O Submission Queue     ] 00000001
+ACS2     [Get Log Page                    ] 00000001
+ACS4     [Delete I/O Completion Queue     ] 00000001
+ACS5     [Create I/O Completion Queue     ] 00000001
+ACS6     [Identify                        ] 00000001
+ACS8     [Abort                           ] 00000001
+ACS9     [Set Features                    ] 00000001
+ACS10    [Get Features                    ] 00000001
+ACS12    [Asynchronous Event Request      ] 00000001
+ACS16    [Firmware Commit                 ] 00000001
+ACS17    [Firmware Image Download         ] 00000001
+ACS20    [Device Self-test                ] 00000001
+ACS128   [Format NVM                      ] 00020003
+ACS129   [Security Send                   ] 00020003
+ACS130   [Security Receive                ] 00010001
+ACS132   [Sanitize                        ] 00020003
+
+I/O Commands
+IOCS0    [Flush                           ] 00010001
+IOCS1    [Write                           ] 00000003
+IOCS2    [Read                            ] 00000001
+IOCS4    [Write Uncorrectable             ] 00000003
+IOCS5    [Compare                         ] 00000001
+IOCS9    [Dataset Management              ] 00010003]
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:01:12.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 0 Start]
+TC:Admin_effectlog,[LOG_TS:2022-07-16 16:01:12.01][RUNTIME:0][LOG:COMMAND][nvme0n1 : LOG:COMMAND nvme effects-log /dev/nvme0n1 Success End_jnk1 nvme effects-log <device> [OPTIONS]NVM Command Set Log Page
+--------------------------------------------------------------------------------
+Admin Commands
+ACS0     [Delete I/O Submission Queue     ] 00000001
+ACS1     [Create I/O Submission Queue     ] 00000001
+ACS2     [Get Log Page                    ] 00000001
+ACS4     [Delete I/O Completion Queue     ] 00000001
+ACS5     [Create I/O Completion Queue     ] 00000001
+ACS6     [Identify                        ] 00000001
+ACS8     [Abort                           ] 00000001
+ACS9     [Set Features                    ] 00000001
+ACS10    [Get Features                    ] 00000001
+ACS12    [Asynchronous Event Request      ] 00000001
+ACS16    [Firmware Commit                 ] 00000001
+ACS17    [Firmware Image Download         ] 00000001
+ACS20    [Device Self-test                ] 00000001
+ACS128   [Format NVM                      ] 00020003
+ACS129   [Security Send                   ] 00020003
+ACS130   [Security Receive                ] 00010001
+ACS132   [Sanitize                        ] 00020003
+
+I/O Commands
+IOCS0    [Flush                           ] 00010001
+IOCS1    [Write                           ] 00000003
+IOCS2    [Read                            ] 00000001
+IOCS4    [Write Uncorrectable             ] 00000003
+IOCS5    [Compare                         ] 00000001
+IOCS9    [Dataset Management              ] 00010003]

@@ -14,11 +14,12 @@ cmdResult=("Success" "Fail")
 run_fio()
 {
 	tstamp=$(date +%y%m%d_%H%M%S)
-	fio_result=nvme0n1_${tstamp}_fio.log
+	fio_result=${tstamp}_fio.log
 
 	
 #	fio_result=nvme0n1_fio.log
-	tLogpath="FIOLOG"
+#	tLogpath="FIOLOG"
+	tLogpath="Log/$2"
 	#echo tLogpath:$tLogpath
 
 	if [ ! -d "$tLogpath" ]; then
@@ -225,6 +226,21 @@ IO_ReadDisturb_MultiSpot()
         	wait $!
 	done
 }
+
+IO_compare()
+{
+        BS=128k
+        QD=32
+        oper=read
+        fioParm="--rw=${oper} --bs=${BS} --verify_pattern=0x1313 --do_verify=1 --iodepth=${QD} --numjobs=1 --invalidate=1 --loops=100 --size=100% --randrepeat=0 --norandommap --overwrite=1 --invaldate=0 --pre_read=0"
+        run_fio
+        wait $!
+	
+
+}
+
+#IO_compare
+
 
 #run_fio 10
 #IO_SEQ_128k 15
